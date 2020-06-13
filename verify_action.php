@@ -32,7 +32,8 @@ if (isset($_POST['action'])) {
 
 		//$mail->isSMTP();                                      // Set mailer to use SMTP
 		$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-		$mail->SMTPAuth = true;                               // Enable SMTP authentication
+		$mail->SMTPAuth = false;		// Enable SMTP authentication
+		$mail->SMTPSecure = false
 		$mail->Username = 'dummydemosmtp@gmail.com';                 // SMTP username
 		$mail->Password = 'demo@dummy';                             // SMTP password
 		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
