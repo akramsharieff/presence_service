@@ -10,7 +10,7 @@ if(!isset($_SESSION['login'])){
 $check1=$_SESSION['login'];
 $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 
-$sql = "SELECT u_name,u_verify,p_admit FROM users WHERE u_email= '$check1'";
+$sql = "SELECT u_name,p_admit FROM users WHERE u_email= '$check1'";
 $result=$conn->query($sql);
 if($row = $result->fetch_assoc())
 {
