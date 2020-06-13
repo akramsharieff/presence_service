@@ -32,6 +32,7 @@ if($row = $result->fetch_assoc())
 	<center><h2>page has not been shared yet....</h2></center>
 	<?php
 	}
+}
 ?>   
    
    
