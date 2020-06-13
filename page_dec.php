@@ -18,7 +18,7 @@ if(isset($_POST["submit"])){
 		if($result)
 		{
 			unset($_SESSION['otp']);
-			echo '<script type="text/javascript">var rslt1=confirm("Your Email was verified....")
+			echo '<script type="text/javascript">var rslt1=confirm("Your Email has been verified....")
 				if(rslt1){
 					window.location.href="page_dec.php";
 				}
