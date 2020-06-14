@@ -78,7 +78,9 @@ if($row = $result->fetch_assoc())
 									echo '<li class="tooltip"><a href="list.php?act=1"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
 								}
 								else{
-									echo '<li class="tooltip"><a href="list.php?act=1"> +'.(($ac_count - $count)+1).'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
+									$rem = ($ac_count - $count)+1;
+									echo '<li class="tooltip"><a href="list.php?act=1"> +'.$rem.'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
+									break;
 								}
 								$count = $count+1;
 								
@@ -101,7 +103,9 @@ if($row = $result->fetch_assoc())
 									echo '<li class="tooltip"><a href="list.php?act=0"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
 								}
 								else{
-									echo '<li class="tooltip"><a href="list.php?act=0">+'.(($ac_count - $count)+1).'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
+									$rem = ($pa_count - $count)+1;
+									echo '<li class="tooltip"><a href="list.php?act=0">+'.$rem.'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
+									break;
 								}
 								$count = $count+1;
 							}
