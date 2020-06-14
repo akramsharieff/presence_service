@@ -107,24 +107,34 @@ session_start();
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-12 display_table">
-							
-							<div class="header_mainmenu display_table_cell text-center">
-								<!-- main nav start -->
-								<?php
-								if(!isset($_SESSION['login']))
-								{?>
-									<h1><a href="index.php"> PRESENCE VISUALIZER </a></h1>
-								<?php
-								}
-								else{?>
-									<h1><a href="page_dec.php"> PRESENCE VISUALIZER </a></h1>
-								<?php 
-								} ?>
-								<!-- eof main nav -->
-								<!-- header toggler -->
-								
-								<span class="toggle_menu"><span></span></span>
+							<div class="col-md-6 col-md-offset-3">
+								<div class=" header_mainmenu display_table_cell text-center">
+									<!-- main nav start -->
+									<?php
+									if(!isset($_SESSION['login']))
+									{?>
+										<h1><a href="index.php"> PRESENCE VISUALIZER </a></h1>
+									<?php
+									}
+									else{?>
+										<h1><a href="page_dec.php"> PRESENCE VISUALIZER </a></h1>
+									<?php 
+									} ?>
+									<!-- eof main nav -->
+									<!-- header toggler -->
+								</div>
 							</div>
+							<div class="col-md-3">
+								<?php
+								if(isset($_SESSION['login'])){
+						
+									echo "<a class=' btn btn-danger' style='border-radius:5px; padding: 14px 30px 14px; font-size: 20px; margin-top:15px;' href=logout.php><span class='mi'></span><span class='fa fa-sign-out txt'>&nbsp;|&nbsp;Logout</span></a>";
+						
+								}	?>
+							</div>
+							
+								<span class="toggle_menu"><span></span></span>
+							
 							
 						</div>
 					</div>

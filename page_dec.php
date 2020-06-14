@@ -4,7 +4,7 @@ include("head.php");
 include("dbconnect.php");
 if(!isset($_SESSION['login'])){
 
-        header('location:index.php');
+	echo '<script>window.location.href="forbidden.php"</script>';
 
 }
 $check1=$_SESSION['login'];
@@ -29,7 +29,10 @@ if($row = $result->fetch_assoc())
 					</div>
 				</div>
 	</section>
-	<center><h2>page has not been shared yet....</h2></center>
+	<div class="container" style="margin-top:50px;">
+	<center><h2>Page has not been shared yet.... </h2>
+		<h2>Please wait till you are authenticated by a authenticated user..</h2>
+	</center>
 	<?php
 	}
 }

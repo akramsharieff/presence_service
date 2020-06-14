@@ -3,7 +3,7 @@ include("head.php");
 include("dbconnect.php");
 if(!isset($_SESSION['login'])){
 
-        header('location:index.php');
+    echo '<script>window.location.href="forbidden.php"</script>';
 
 }
 $action = $_GET['act'];

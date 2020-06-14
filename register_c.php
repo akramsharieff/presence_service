@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
 		if($result)
 		{// Success Message
 			
-			echo "<center>Account was created successfully <h3><a href='index.php'>login NOW..</a></h3></center>";
+			echo "<center>Account was created successfully <h3><a href='cu_login.php'>login NOW..</a></h3></center>";
 			exit();
 		}
 		else{

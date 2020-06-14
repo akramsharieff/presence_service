@@ -3,7 +3,7 @@ include("head.php");
 include("dbconnect.php");
 if(!isset($_SESSION['login'])){
 
-        header('location:index.php');
+		echo '<script>window.location.href="forbidden.php"</script>';
 
 }
 $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
@@ -157,13 +157,7 @@ if($row = $result->fetch_assoc())
 							
 							<select id='purpose' style="background-color:white; align:right;">
 							<option value="1"><h2 class="text-uppercase">Hi! <?php echo $row['u_name']; ?></h2></option>
-							<?php
-								if(isset($_SESSION['login'])){
 						
-									echo "<option value='1'><a href=logout.php><span class='mi'></span><span class='txt'>Logout</span></a></option>";
-						
-								}	?>
-							
 							
 							</select>
 						</div>
