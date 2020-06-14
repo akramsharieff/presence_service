@@ -25,7 +25,10 @@ session_start();
 	<!-- fonts -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
@@ -107,7 +110,16 @@ session_start();
 							
 							<div class="header_mainmenu display_table_cell text-center">
 								<!-- main nav start -->
-								<h1><a href="index.php"> PRESENCE VISUALIZER </a></h1>
+								<?php
+								if(!isset($_SESSION['login']))
+								{?>
+									<h1><a href="index.php"> PRESENCE VISUALIZER </a></h1>
+								<?php
+								}
+								else{?>
+									<h1><a href="page_dec.php"> PRESENCE VISUALIZER </a></h1>
+								<?php 
+								} ?>
 								<!-- eof main nav -->
 								<!-- header toggler -->
 								

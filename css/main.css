@@ -15533,7 +15533,8 @@ a.color-icon.border-icon:hover {
     color: white;
     font-size: 20px;
     margin-left: -18px;
-    border: 2px solid white;
+		border: 2px solid white;
+		z-index: 1000;
 }
 
 .tooltip .tooltiptext {
