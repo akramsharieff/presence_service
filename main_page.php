@@ -14,7 +14,7 @@ if(isset($_POST['quick_apply'])){
 	$result2=$conn->query($query2);
 	if(mysqli_num_rows($result2)>0)
 	{
-		$row_ad = $result->fetch_assoc();
+		$row_ad = $result2->fetch_assoc();
 		if($row_ad['p_admit'] == 0){
 			$ad_u = "update users set p_admit = true where u_email = '$email'";
 			$conn->query($ad_u);
@@ -54,7 +54,7 @@ if($row = $result->fetch_assoc())
 							<?php
 							}
 						}
-						$ac_q = "SELECT * FROM users WHERE log_status = 1";
+						$ac_q = "SELECT * FROM users WHERE log_status = 1 and p_admit = 1";
 						$ac_rslt=$conn->query($ac_q);
 						?>
 						<style>
@@ -87,7 +87,7 @@ if($row = $result->fetch_assoc())
 
 						</ul>
 						<?php
-							$pa_q = "SELECT * FROM users WHERE log_status = 0";
+							$pa_q = "SELECT * FROM users WHERE log_status = 0 and p_admit = 1";
 							$pa_rslt=$conn->query($pa_q);
 							$pa_count = mysqli_num_rows($pa_rslt);
 							$count = 1;
