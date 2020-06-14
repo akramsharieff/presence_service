@@ -31,7 +31,7 @@ if($row = $result->fetch_assoc())
 	</section>
 	<div class="container" style="margin-top:50px;">
 	<center><h2>Page has not been shared yet.... </h2>
-		<h2>Please wait till you are authenticated by a authenticated user..</h2>
+		<h2>Please wait till you are invited by a authenticated user..</h2>
 	</center>
 	<?php
 	}
