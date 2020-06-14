@@ -75,11 +75,11 @@ if($row = $result->fetch_assoc())
 								$name = $ac_row['u_name'];
 								$email = $ac_row['u_email'];
 								if($count<=5){
-									echo '<li class="tooltip"><a href="list.php?act=1"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
+									echo '<li style="background-color:rgb('.rand(0,200).','.rand(0,200).','.rand(0,200).');" class="tooltip"><a href="list.php?act=1"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
 								}
 								else{
 									$rem = ($ac_count - $count)+1;
-									echo '<li class="tooltip"><a href="list.php?act=1"> +'.$rem.'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
+									echo '<li style="background-color:rgb('.rand(0,200).','.rand(0,200).','.rand(0,200).');" class="tooltip"><a href="list.php?act=1"> +'.$rem.'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
 									break;
 								}
 								$count = $count+1;
@@ -100,11 +100,11 @@ if($row = $result->fetch_assoc())
 								$name = $pa_row['u_name'];
 								$email = $pa_row['u_email'];
 								if($count<=5){
-									echo '<li class="tooltip"><a href="list.php?act=0"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
+									echo '<li style="background-color:rgb('.rand(0,200).','.rand(0,200).','.rand(0,200).');" class="tooltip"><a href="list.php?act=0"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
 								}
 								else{
 									$rem = ($pa_count - $count)+1;
-									echo '<li class="tooltip"><a href="list.php?act=0">+'.$rem.'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
+									echo '<li style="background-color:rgb('.rand(0,200).','.rand(0,200).','.rand(0,200).');" class="tooltip"><a href="list.php?act=0">+'.$rem.'</a><span class="tooltiptext">Click the bubble <br/>to view the users log</span> </li>';
 									break;
 								}
 								$count = $count+1;
