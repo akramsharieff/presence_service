@@ -74,7 +74,7 @@ if($row = $result->fetch_assoc())
 
 								$name = $ac_row['u_name'];
 								$email = $ac_row['u_email'];
-								if($count<=1){
+								if($count<=5){
 									echo '<li class="tooltip"><a href="list.php?act=1"> '.$name[0].'</a><span class="tooltiptext">'.$name.'<br/>'.$email.'</span> </li>';
 								}
 								else{
@@ -139,7 +139,7 @@ if($row = $result->fetch_assoc())
 													<h6 style="color:black;">Enter E- mail</h6>
 													<input style="color:black; border-color: black;" type="email" name="email" class="form-control" id="email"  placeholder = "Email" required>
 													<br>
-													<button type = "submit"  style="margin-top:15px;" name="quick_apply" class ="btn btn-primary pull-right">Quick Apply</button>
+													<button type = "submit"  style="padding: 14px 30px 14px; font-size: 20px; margin-top:15px;" name="quick_apply" class ="btn btn-success pull-right">Invite</button>
 												</div>
 												
 											</div>
@@ -170,7 +170,11 @@ if($row = $result->fetch_assoc())
 					</div>
 				</div>
 	</section>
-	
+
+	<div align="center" style="margin-top:30px;" class="container">
+			<h3>Sample page that shows the people that are currently viewing the doc</h3>
+			<embed  src="database/vitassignmentfirst.pdf" width="600" height="500"/>
+	</div>
 	<script>
 $(document).ready(function(){
     $('#purpose').on('change', function() {
