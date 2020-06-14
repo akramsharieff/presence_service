@@ -1859,7 +1859,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	background-color: #ccc;
+	background-color: #fff;
 }
 
 h1,
@@ -1871,8 +1871,9 @@ h6 {
 	font-weight: 900;
 	line-height: 1.3;
 	word-break: break-word;
-	margin-top: 1.1em;
-	margin-bottom: 0.8em;
+
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
 	position: relative;
 }
 
@@ -1915,7 +1916,7 @@ h3:first-child,
 h4:first-child,
 h5:first-child,
 h6:first-child {
-	margin-top: 0;
+	/*margin-top: 0;*/
 }
 
 p {
@@ -4282,7 +4283,7 @@ header [class*="col-"],
 
 .row.columns_padding_0,
 .columns_padding_0 .row {
-	margin: 0;
+	margin-top: 100px;
 }
 
 .row.columns_padding_1,
@@ -4523,6 +4524,7 @@ header [class*="col-"],
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding:30px;
 }
 
 .flex-row > [class*='col-'] > * {
@@ -13256,6 +13258,7 @@ widget_pages
 
 .teaser.media:first-child {
 	margin-top: 0;
+	border-radius: 30px;
 }
 
 .teaser .media-body h3 {
@@ -15517,4 +15520,58 @@ a.color-icon.border-icon:hover {
 
 .checkbox-slider--b-flat input + span:before {
 	box-shadow: none;
+}
+.tooltip {
+  position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    opacity: 1;
+    background-color: #00598e;
+    vertical-align: middle;
+    padding: 21px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    margin-left: -18px;
+    border: 2px solid white;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: auto;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 10px 10px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.business{
+	padding-top:10px;
+	padding-bottom:0px 	!important;
+}
+.business1{
+margin-top: -10px !important;
 }

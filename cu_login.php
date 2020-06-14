@@ -39,12 +39,12 @@ if (isset($_SESSION['login']))
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<h2 class="text-uppercase">Customer Login</h2>
+							<h2 class="text-uppercase">Login</h2>
 						</div>
 					</div>
 				</div>
 			</section>
-
+<br/><br/>
    <form name="form1" method="post" action="">
      <div class="col-md-4 col-md-offset-4" id="outer" align="center">
 		<table>

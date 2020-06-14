@@ -57,6 +57,7 @@ if(isset($_POST['submit'])){
 			<section class="ls section_padding_top_30 section_padding_bottom_30">
 				<div class="container" >
 					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
 						<form class="shop-register" role="form" method ="post" action="register_c.php">
 							
 							<div class="col-sm-12">
@@ -101,6 +102,7 @@ if(isset($_POST['submit'])){
 							</div>
 							<div class="col-sm-12"> <button type="submit" name="submit" class="theme_button wide_button color1 topmargin_40">Register Now</button> <button type="reset" class="theme_button wide_button">Clear Form</button> </div>
 						</form>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -123,6 +125,7 @@ if(isset($_POST['submit'])){
 			<section class="ls section_padding_top_30 section_padding_bottom_30">
 				<div class="container" >
 					<div class="row">
+					<div class="col-md-6 col-md-offset-3">
 						<form class="shop-register" role="form" method ="post" action="register_c.php">
 							
 							<div class="col-sm-12">
@@ -168,6 +171,7 @@ if(isset($_POST['submit'])){
 							<div class="col-sm-12"> <button type="submit" name="submit" class="theme_button wide_button color1 topmargin_40">Register Now</button> <button type="reset" class="theme_button wide_button">Clear Form</button> </div>
 						</form>
 					</div>
+</div>
 				</div>
 			</section>
 <script src="js/classie.js"></script>

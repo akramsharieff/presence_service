@@ -9,7 +9,7 @@ include("head.php");
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="teaser media media-xxs-block inline-block cs hover_icon with_padding big_padding">
 								<div class="media-left media-middle">
-									<div class="size_big inline-block round light_bg_color thick_border_icon"> <i class="fa fa-user highlight teaser_icon" aria-hidden="true"></i> </div>
+									<div class="size_big inline-block round light_bg_color thick_border_icon"> <i class="fa fa-user-plus highlight  teaser_icon" aria-hidden="true"></i> </div>
 								</div>
 								<div class="media-body media-middle">
 									<h4 class="text-uppercase bottommargin_10"><a href="register_c.php">New user? Sign Up</a></h4>
@@ -20,7 +20,7 @@ include("head.php");
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="teaser media media-xxs-block inline-block cs main_color2 hover_icon with_padding big_padding">
 								<div class="media-left media-middle">
-									<div class="size_big inline-block round light_bg_color thick_border_icon"> <i class="fa fa-user-plus highlight2 teaser_icon" aria-hidden="true"></i> </div>
+									<div class="size_big inline-block round light_bg_color thick_border_icon"> <i class="fa fa-user highlight2 teaser_icon" aria-hidden="true"></i> </div>
 								</div>
 								<div class="media-body media-middle">
 									<h4 class="text-uppercase bottommargin_10"><a href="cu_login.php">User Login</a></h4>
@@ -34,7 +34,7 @@ include("head.php");
 			</section>
 			
 		
-			<section class="ds color page_copyright section_padding_15 with_top_border_container">
+			<!--<section class="ds color page_copyright section_padding_15 with_top_border_container">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
@@ -42,7 +42,7 @@ include("head.php");
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 		</div>
 		<!-- eof #box_wrapper -->
 	</div>

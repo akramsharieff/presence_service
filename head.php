@@ -25,6 +25,7 @@ session_start();
 	<!-- fonts -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
@@ -81,7 +82,7 @@ session_start();
 	<!-- wrappers for visual page editor and boxed version of template -->
 	<div id="canvas">
 		<div id="box_wrapper">
-			<!-- template sections -->
+			<!-- template sections 
 			<section class="page_topline ls section_padding_15">
 				<div class="container-fluid">
 					<div class="row">
@@ -98,7 +99,7 @@ session_start();
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 			<header class="page_header header_white toggler_xs_right section_padding_25">
 				<div class="container-fluid">
 					<div class="row">
@@ -106,15 +107,10 @@ session_start();
 							
 							<div class="header_mainmenu display_table_cell text-center">
 								<!-- main nav start -->
-								<h1>PAGE PRESENCE VISUALIZER</h1>
+								<h1><a href="index.php"> PRESENCE VISUALIZER </a></h1>
 								<!-- eof main nav -->
 								<!-- header toggler -->
-								<?php
-								if(isset($_SESSION['login'])){
-						
-									echo "<li id='menu-item-9012' class='menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children'  data-mm='false' data-mmc='2'><a href=logout.php><span class='mi'></span><span class='txt'>Logout</span></a></li>";
-						
-								}	?>
+								
 								<span class="toggle_menu"><span></span></span>
 							</div>
 							
