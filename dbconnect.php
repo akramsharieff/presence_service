@@ -1,5 +1,5 @@
-<?php           $servername = "sql12.freemysqlhosting.net";
-				$dbusername = "sql12348146";
-				$dbpassword = "SBcK5XACqn";
-				$dbname = "sql12348146";
+<?php          $servername = "www.erasishealth.com";
+			   $dbusername = "reinciar";
+			   $dbpassword = "reinciar1234";
+			   $dbname = "presence";
 ?>
